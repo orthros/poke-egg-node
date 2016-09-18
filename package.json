@@ -1,0 +1,22 @@
+{
+  "name": "poke-egg-node",
+  "version": "1.0.0",
+  "description": "Node Express module to solve the bin packing problem of pokemon go egg walking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orthros/poke-egg-node.git"
+  },
+  "author": "orthros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orthros/poke-egg-node/issues"
+  },
+  "homepage": "https://github.com/orthros/poke-egg-node#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
