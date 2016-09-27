@@ -37,6 +37,10 @@ for(var i = 0; i < nEggs; i++)
     urlsToPush.push(baseURL + eggPortion);
 }
 
+//Need to reverse the urls to use because we built them
+//"up" from 0 to 8, these matches are greedy, so if
+//we do not reverse the urls, we will always match
+//the "only one" egg url 
 urlsToPush.reverse()
           .forEach(function(url) {
               app.get(url, function(req, res){
@@ -48,7 +52,7 @@ urlsToPush.reverse()
                       if(eggVal != undefined){
                           eggs.push(parseInt(eggVal, 10));
                       }
-                  }                  
+                  }
                   var result = solver.solve(distance, eggs);
                   res.send(result);
               });
